@@ -8,7 +8,10 @@ function ItemRepos({ repo, remover }) {
   return (
     <ItemConteiner>
       <h3 className="nameRepositorio">{repo.name}</h3>
-      <p>{repo.full_name}</p>
+      {/*<p>{repo.full_name}</p>*/}
+      <p className="nomeUsuario">
+        <strong>{repo.owner.login}</strong>
+      </p>
       {repo.description && <p>{repo.description}</p>}
 
       <a className="verMais" href={repo.html_url} target="_blank">
@@ -27,6 +30,9 @@ ItemRepos.propTypes = {
     description: PropTypes.string,
     full_name: PropTypes.string.isRequired,
     html_url: PropTypes.string.isRequired,
+    owner: PropTypes.shape({
+      login: PropTypes.string.isRequired,
+    }).isRequired,
   }).isRequired,
   remover: PropTypes.func.isRequired,
 };

@@ -21,6 +21,7 @@ export const ItemConteiner = styled.div`
     font-size: 16px;
     color: #fafafa50;
     margin-bottom: 10px;
+    font-style: italic;
   }
 
   a {
@@ -65,5 +66,11 @@ export const ItemConteiner = styled.div`
   }
   .nameRepositorio {
     font-family: "Roboto Mono", monospace;
+  }
+  .nomeUsuario {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: #fafafa;
+    margin-bottom: 8px;
   }
 `;
