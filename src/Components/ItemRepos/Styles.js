@@ -21,7 +21,6 @@ export const ItemConteiner = styled.div`
     font-size: 16px;
     color: #fafafa50;
     margin-bottom: 10px;
-    font-style: italic;
   }
 
   a {
@@ -72,5 +71,15 @@ export const ItemConteiner = styled.div`
     font-size: 20px;
     color: #fafafa;
     margin-bottom: 8px;
+  }
+
+  .description {
+    font-style: italic;
+  }
+  .repositorioOriginal {
+    color: #555555; /* Tom mais escuro que o nome do usuário */
+    font-size: 1rem;
+    margin-top: 5px;
+    font-style: italic;
   }
 `;
